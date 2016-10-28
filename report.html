@@ -16277,7 +16277,9 @@ Grid search technique is used to find optimum values for the model's hyperparame
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer: </strong></p>
 <ul>
-<li>In k-fold cross-validation the dataset is partitioned in k folds (consecutive or shuffled) comprising k-1 training folds and one test fold. The train/test partition is repeated k fold so basically all the data is used for training as well for testing. The final score is computed as the average over the k folds</li>
+<li>In k-fold cross-validation the dataset is partitioned in k folds (consecutive or shuffled) comprising k-1 training folds and one test fold.The final score is computed as the average over the k folds</li>
+<li>One of the benefits of k-fold cross validation is that basically all the data is used for training as well for validation</li>
+<li>Another benefit would be that this technique is less sensitive to partioning the data. For example: if k=10 then only 1/10 of the observations are used for testing. This can result in a higher variance. But repeating 10 times the procedure, and averaging the variances the model become less sensitive to partioning  </li>
 </ul>
 
 </div>
